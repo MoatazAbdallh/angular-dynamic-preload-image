@@ -1,0 +1,27 @@
+{
+  "name": "angular-dynamic-preload-image",
+  "version": "1.0.1",
+  "homepage": "https://github.com/mo3taz-abdallh/angular-dynamic-preload-image",
+  "authors": [
+	"leon <leon@revillwebdesign.com>",
+    "Moataz Abdallh <moataz.abdallh@gmail.com>"
+  ],
+  "description": "A simple AngularJS module to make it easy to pre-load images with dynamic attr interpolation.",
+  "main": "dist/angular-dynamic-preloader-image.min.js",
+  "keywords": [
+    "angular-image-preloader",
+    "image-preload",
+    "dynamic-image-preload"
+  ],
+  "dependencies": {
+        "angular": "~1.4.2"
+    },
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
