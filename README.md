@@ -47,8 +47,10 @@ Check out the [demo](http://revillweb.github.io/angular-preload-image/) for an e
 #Build
 ```javascript
 npm install 
+```
 ```javascript
 gulp serve
+```
 the minified gulp file will be under dist folder
  
 #Credit
