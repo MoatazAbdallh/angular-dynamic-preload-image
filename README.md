@@ -55,5 +55,6 @@ the minified gulp file will be under dist folder
  
 #Credit
 Editing project forked from [Repo](https://github.com/RevillWeb/angular-preload-image)
+
 Inspiration taken from Ben Nadel's [post](http://www.bennadel.com/blog/2597-preloading-images-in-angularjs-with-promises.htm) about pre-loading images.
 
