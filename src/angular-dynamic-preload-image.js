@@ -9,7 +9,7 @@ angular.module('angular-dynamic-preload-image').factory('preLoader', function ()
         }).attr('src', url);
     }
 });
-angular.module('angular-preload-image').directive('preloadImage', ['preLoader', function (preLoader) {
+angular.module('angular-dynamic-preload-image').directive('preloadImage', ['preLoader', function (preLoader) {
     return {
         restrict: 'A',
         terminal: true,
@@ -31,7 +31,7 @@ angular.module('angular-preload-image').directive('preloadImage', ['preLoader', 
         }
     };
 }]);
-angular.module('angular-preload-image').directive('preloadBgImage', ['preLoader', function (preLoader) {
+angular.module('angular-dynamic-preload-image').directive('preloadBgImage', ['preLoader', function (preLoader) {
     return {
         restrict: 'A',
         link: function (scope, element, attrs) {
