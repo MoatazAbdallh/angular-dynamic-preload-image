@@ -7,7 +7,7 @@
     "Moataz Abdallh <moataz.abdallh@gmail.com>"
   ],
   "description": "A simple AngularJS module to make it easy to pre-load images with dynamic attr interpolation.",
-  "main": "dist/angular-dynamic-preloader-image.min.js",
+  "main": "dist/angular-dynamic-preload-image.min.js",
   "keywords": [
     "angular-image-preloader",
     "image-preload",
