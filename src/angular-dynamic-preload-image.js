@@ -18,14 +18,16 @@ angular.module('angular-dynamic-preload-image').directive('preloadImage', ['preL
             scope.default = attrs.defaultImage || "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wEWEygNWiLqlwAAABl0RVh0Q29tbWVudABDcmVhdGVkIHdpdGggR0lNUFeBDhcAAAAMSURBVAjXY/j//z8ABf4C/tzMWecAAAAASUVORK5CYII=";
             attrs.$observe('ngSrc', function () {
                 var url = attrs.ngSrc;
-                attrs.$set('src', scope.default);
-                preLoader(url, function () {
-                    attrs.$set('src', url);
-                }, function () {
-                    if (attrs.fallbackImage != undefined) {
-                        attrs.$set('src', attrs.fallbackImage);
-                    }
-                });
+                if (url && url.substring(url.lastIndexOf('/'))[1] != ".") {
+                    attrs.$set('src', scope.default);
+                    preLoader(url, function () {
+                        attrs.$set('src', url);
+                    }, function () {
+                        if (attrs.fallbackImage != undefined) {
+                            attrs.$set('src', attrs.fallbackImage);
+                        }
+                    });
+                }
             })
 
         }
